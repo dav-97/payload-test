@@ -8,7 +8,7 @@ import { Options } from "./collections/Options";
 import { Documents } from "./collections/Documents";
 
 export default buildConfig({
-  serverURL: "http://localhost:3000",
+  serverURL: "http://localhost:3333",
   admin: {
     user: Users.slug,
   },
