@@ -1,8 +1,8 @@
 import { Block } from "payload/types";
 import { defaultBlockFields } from "./defaultBlock";
 
-export const yourAccountBlock: Block = {
-  slug: "yourAccount",
+export const textareaBlock: Block = {
+  slug: "textarea",
   fields: [
     ...defaultBlockFields,
     {

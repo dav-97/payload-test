@@ -1,8 +1,8 @@
 import { Block } from "payload/types";
 import { defaultBlockFields } from "./defaultBlock";
 
-export const yourAccountBlock: Block = {
-  slug: "yourAccount",
+export const uploadBlock: Block = {
+  slug: "upload",
   fields: [
     ...defaultBlockFields,
     {

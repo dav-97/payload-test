@@ -7,7 +7,47 @@ export const Users: CollectionConfig = {
     useAsTitle: "email",
   },
   fields: [
-    // Email added by default
-    // Add more fields as needed
+    {
+      name: "firstName",
+      type: "text",
+    },
+    {
+      name: "lastName",
+      type: "text",
+    },
+    {
+      name: "email",
+      type: "email",
+    },
+    {
+      name: "role",
+      type: "select",
+      options: [
+        { label: "Admin", value: "admin" },
+        { label: "User", value: "user" },
+      ],
+      required: true,
+      defaultValue: "user",
+    },
+    {
+      name: "phone",
+      type: "text",
+    },
+    {
+      name: "city",
+      type: "text",
+    },
+    {
+      name: "street",
+      type: "text",
+    },
+    {
+      name: "houseNumber",
+      type: "text",
+    },
+    {
+      name: "postalCode",
+      type: "text",
+    },
   ],
 };

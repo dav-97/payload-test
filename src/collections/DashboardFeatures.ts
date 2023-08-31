@@ -1,9 +1,9 @@
 import { CollectionConfig } from "payload/types";
 
-export const Options: CollectionConfig = {
-  slug: "options",
+export const DashboardFeatures: CollectionConfig = {
+  slug: "dashboardFeatures",
   admin: {
-    defaultColumns: ["type", "name", "updatedAt"],
+    defaultColumns: ["key", "name", "updatedAt"],
     useAsTitle: "name",
   },
   access: {
@@ -14,12 +14,12 @@ export const Options: CollectionConfig = {
   },
   fields: [
     {
-      name: "type",
+      name: "name",
       type: "text",
     },
     {
-      name: "name",
-      type: "text",
+      name: "enabled",
+      type: "checkbox",
     },
   ],
 };
